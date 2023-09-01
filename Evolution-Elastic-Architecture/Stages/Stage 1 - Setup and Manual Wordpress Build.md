@@ -171,6 +171,8 @@ sudo rm latest.tar.gz
 
 ## Configure the wordpress wp-config.php file 
 
+This replaces the placeholders in the config file with the parameter values.
+
 ```
 sudo cp ./wp-config-sample.php ./wp-config.php
 sudo sed -i "s/'database_name_here'/'$DBName'/g" wp-config.php
