@@ -168,7 +168,6 @@ So both the application and the WP-Content will exist away from the EC2 instance
 This configuration has several limitations :-
 
 - ~~The application and database are built manually, taking time and not allowing automation~~ FIXED  
-- ~~^^ it was slow and annoying ... that was the intention.~~ FIXED  
 - ~~The database and application are on the same instance, neither can scale without the other~~ FIXED  
 - ~~The database of the application is on an instance, scaling IN/OUT risks this media~~ FIXED  
 - ~~The application media and UI store is local to an instance, scaling IN/OUT risks this media~~ FIXED  
@@ -176,5 +175,3 @@ This configuration has several limitations :-
 - Customer Connections are to an instance directly ... no health checks/auto healing
 - The IP of the instance is hardcoded into the database ....
 
-
-You can now move onto STAGE 5
