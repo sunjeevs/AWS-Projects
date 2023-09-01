@@ -139,9 +139,8 @@ Click `Publish`
 Click `view Post`  
 
 This is a working, auto built WordPress instance
-** The instance should not be terminated this time, as we will be migrating the database in stage 3.**
 
-# STAGE 2 - FINISH  
+# STAGE 2 - Done 
 
 This configuration has several limitations :-
 
