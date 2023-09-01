@@ -238,7 +238,6 @@ This is an example of self-healing, a new instance is provisioned to take the ol
 This configuration has several limitations :-
 
 - ~~The application and database are built manually, taking time and not allowing automation~~ FIXED  
-- ~~^^ it was slow and annoying ... that was the intention.~~ FIXED  
 - ~~The database and application are on the same instance, neither can scale without the other~~ FIXED  
 - ~~The database of the application is on an instance, scaling IN/OUT risks this media~~ FIXED  
 - ~~The application media and UI store is local to an instance, scaling IN/OUT risks this media~~ FIXED  
