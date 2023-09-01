@@ -8,5 +8,3 @@ Stage 3 - Split out the DB into RDS and Update the LT
 Stage 4 - Split out the WP filesystem into EFS and Update the LT
 Stage 5 - Enable elasticity via a ASG & ALB and fix wordpress (hardcoded WPHOME)
 
-
-
