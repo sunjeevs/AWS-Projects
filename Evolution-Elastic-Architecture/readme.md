@@ -1,1 +1,1 @@
-In this advanced demo lesson you are going to evolve the architecture of a popular web application wordpress The architecture will start with a manually built single instance, running the application and database over the stages of the demo you will evolve this until its a scalable and resilient architecture
+In this project, The architecture will be initiated with a manually constructed single instance, with the application and database being run through the stages, gradually evolving it into a scalable and resilient architecture.
