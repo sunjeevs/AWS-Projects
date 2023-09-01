@@ -109,7 +109,6 @@ type `clear` and press enter
 ## Bring in the parameter values from SSM
 
 Run the commands below to bring the parameter store values into ENV variables to make the manual build easier. 
-**IF AT ANY POINT YOU ARE DISCONNECTED, RERUN THE BLOCK BELOW, THEN CONTINUE FROM WHERE YOU DISCONNECTED FROM**
 
 ```
 DBPassword=$(aws ssm get-parameters --region us-east-1 --names /A4L/Wordpress/DBPassword --with-decryption --query Parameters[0].Value)
@@ -205,7 +204,7 @@ sudo rm /tmp/db.setup
 
 Open the EC2 console https://console.aws.amazon.com/ec2/v2/home?region=us-east-1#Instances:sort=desc:tag:Name  
 Select the `Wordpress-Manual` instance  
-copy the `IPv4 Public IP` into your clipboard (**DON'T CLICK THE OPEN LINK ... just copy the IP**)
+copy the `IPv4 Public IP` into clipboard (**DON'T CLICK THE OPEN LINK ... just copy the IP**)
 Open that IP in a new tab  
 You should see the wordpress welcome page  
 
@@ -231,32 +230,29 @@ If you see any popups close them down
 For title `The Best Animal(s)!`  
 Click the `+` under the title, select  `Gallery` 
 Click `Upload`  
-Select some animal pictures.... if you dont have any use google images to download some  
-Upload them  
+Select some pictures and upload.
 Click `Publish`  
 Click `Publish`
 Click `view Post`  
 
-This is your working, manually installed and configured wordpress
+This is a working, manually installed and configured wordpress
 
-# STAGE 1 - FINISH  
+# STAGE 1 - Done  
 
-This configuration has several limitations which you will resolve one by one within this lesson :-
+This configuration has several limitations which you will be resolved one by one in this project :-
 
 - The application and database are built manually, taking time and not allowing automation
-- ^^ it was slow and annoying ... that was the intention.
 - The database and application are on the same instance, neither can scale without the other
 - The database of the application is on an instance, scaling IN/OUT risks this media
 - The application media and UI store is local to an instance, scaling IN/OUT risks this media
 - Customer Connections are to an instance directly ... no health checks/auto healing
 - The IP of the instance is hardcoded into the database ....
-- Go to https://console.aws.amazon.com/ec2/v2/home?region=us-east-1#Instances:sort=desc:tag:Name
+- Go to EC2 instances.
 - Right click `Wordpress-Manual` , `Stop Instance`, `Stop`  
 - Right click `Wordpress-Manual` , `Start Instance`, `Start`  
 - the IP address has changed ... which is bad
 - Try browsing to it ...
-- What about the images....?
+- It won't load...
 - The images are pointing at the old IP address...
 - Right click `Wordpress-Manual` , `Terminate Instance`, `Terminate`  
 
-You can now move onto STAGE2
