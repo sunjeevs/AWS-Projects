@@ -28,6 +28,7 @@ Under `Credit specification` select `Standard`
 
 At this point, the configuration required to build the instance needs to be added.
 Enter the user data below into the `User Data` box
+This is basically all of the commands entered in the previous stage individually.
 
 ```
 #!/bin/bash -xe
