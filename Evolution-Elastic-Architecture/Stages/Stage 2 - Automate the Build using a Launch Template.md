@@ -27,8 +27,7 @@ Under `Credit specification` select `Standard`
 # STAGE 2B - Add Userdata
 
 At this point, the configuration required to build the instance needs to be added.
-Enter the user data below into the `User Data` box
-This is basically all of the commands entered in the previous stage individually.
+Enter the user data below into the `User Data` box. This is basically just all of the commands entered in the previous stage individually.
 
 ```
 #!/bin/bash -xe
