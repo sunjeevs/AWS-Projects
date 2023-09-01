@@ -12,3 +12,14 @@ Stage 4 - Split out the WP filesystem into EFS and Update the LT
 
 Stage 5 - Enable elasticity via a ASG & ALB and fix wordpress (hardcoded WPHOME)
 
+
+## Instructions
+
+- [Stage 1](https://github.com/sunjeevs/AWS-Projects/blob/main/Evolution-Elastic-Architecture/Stages/Stage%201%20-%20Setup%20and%20Manual%20Wordpress%20Build.md)
+- [Stage 2](https://github.com/acantril/learn-cantrill-io-labs/blob/master/aws-elastic-wordpress-evolution/02_LABINSTRUCTIONS/STAGE2%20-%20Automate%20the%20build%20using%20a%20Launch%20Template.md)
+- [Stage 3](https://github.com/acantril/learn-cantrill-io-labs/blob/master/aws-elastic-wordpress-evolution/02_LABINSTRUCTIONS/STAGE3%20-%20Add%20RDS%20and%20Update%20the%20LT.md)
+- [Stage 4](https://github.com/acantril/learn-cantrill-io-labs/blob/master/aws-elastic-wordpress-evolution/02_LABINSTRUCTIONS/STAGE4%20-%20Add%20EFS%20and%20Update%20the%20LT.md)
+- [Stage 5](https://github.com/acantril/learn-cantrill-io-labs/blob/master/aws-elastic-wordpress-evolution/02_LABINSTRUCTIONS/STAGE5%20-%20Add%20an%20ELB%20and%20ASG.md)
+- [Stage 6](https://github.com/acantril/learn-cantrill-io-labs/blob/master/aws-elastic-wordpress-evolution/02_LABINSTRUCTIONS/STAGE6%20-%20CLEANUP.md)
+
+
