@@ -1,23 +1,17 @@
-# Advanced Demo - Web App - Single Server to Elastic Evolution
+# Web App - Single Server to Elastic Evolution
 
-![Stage1 - PNG](https://github.com/acantril/learn-cantrill-io-labs/blob/master/aws-elastic-wordpress-evolution/02_LABINSTRUCTIONS/STAGE1%20-%20SINGLE%20SERVER%20MANUAL.png)
-
-In stage 1 of this advanced demo you will:
+Stage 1 Steps :
 - Setup the environment which WordPress will run from. 
 - Configure some SSM Parameters which the manual and automatic stages of this advanced demo series will use
 - and perform a manual install of wordpress and a database on the same EC2 instance. 
 
 This is the starting point .. the common wordpress configuration which you will evolve over the coming demo stages.
 
-# STAGE 1A - Login to an AWS Account  
-
-Login to an AWS account using a user with admin privileges and ensure your region is set to `us-east-1` `N. Virginia`
+# STAGE 1A - Create an EC2 Instance to run wordpress
 
 Click [HERE](https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/quickcreate?templateURL=https://learn-cantrill-labs.s3.amazonaws.com/aws-elastic-wordpress-evolution/A4LVPC.yaml&stackName=A4LVPC) to auto configure the VPC which WordPress will run from
 
 Wait for the STACK to move into the `CREATE_COMPLETE` state before continuing.
-
-# STAGE 1B - Create an EC2 Instance to run wordpress
 
 Move to the EC2 console https://console.aws.amazon.com/ec2/v2/home?region=us-east-1  
 Click `Launch Instance`  
@@ -37,13 +31,12 @@ Check `Select an existing security group`
 Select `A4LVPC-SGWordpress` it will have randomness after it, thats ok :)  
 We will leave storage as default so make no changes here  
 Expand `Advanced Details`  
-For `IAM instance profile role` select `A4LVPC-WordpressInstanceProfile`  **THIS BIT IS IMPORTANT**  
+For `IAM instance profile role` select `A4LVPC-WordpressInstanceProfile` 
 Find the `Credit Specification Dropdown` and choose `Standard` (some accounts aren't enabled for Unlimited)
 Click `Launch Instance`    
 Click `View All instances`  
 
 Wait for the instance to be in a `RUNNING` state  
-_you can continue to stage 1B below while the instance is provisioning_
 
 # STAGE 1B - Create SSM Parameter Store values for wordpress
 
@@ -52,8 +45,6 @@ In this sub-section you are going to create parameters to store the important co
 
 Open a new tab to https://console.aws.amazon.com/systems-manager/home?region=us-east-1  
 Click on `Parameter Store` on the menu on the left
-
-**MAKE SURE WITH THE BELOW ... NO WHITESPACE BEFORE OR AFTER .. MAKE SURE THE UPPER/LOWER CASE IS CORRECT**
 
 ## Create Parameter - DBUser (the login for the specific wordpress DB)  
 Click `Create Parameter`
@@ -75,7 +66,7 @@ Set Data type to `text`
 Set `Value` to `a4lwordpressdb`  
 Click `Create parameter` 
 
-## Create Parameter - DBEndpoint (the endpoint for the wordpress DB .. )  
+## Create Parameter - DBEndpoint (the endpoint for the wordpress DB)  
 Click `Create Parameter`
 Set Name to `/A4L/Wordpress/DBEndpoint`
 Set Description to `Wordpress Endpoint Name`  
