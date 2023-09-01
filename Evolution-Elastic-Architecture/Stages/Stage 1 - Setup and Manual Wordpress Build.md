@@ -5,7 +5,7 @@ Stage 1 Steps :
 - Configure some SSM Parameters which the manual and automatic stages of this advanced demo series will use
 - and perform a manual install of wordpress and a database on the same EC2 instance. 
 
-This is the starting point .. the common wordpress configuration which you will evolve over the coming demo stages.
+This is the starting point .. the common wordpress configuration which will be evolved over the coming stages.
 
 # STAGE 1A - Create an EC2 Instance to run wordpress
 
