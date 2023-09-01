@@ -9,8 +9,6 @@ This is the starting point .. the common wordpress configuration which will be e
 
 # STAGE 1A - Create an EC2 Instance to run wordpress
 
-Click [HERE](https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/quickcreate?templateURL=https://learn-cantrill-labs.s3.amazonaws.com/aws-elastic-wordpress-evolution/A4LVPC.yaml&stackName=A4LVPC) to auto configure the VPC which WordPress will run from
-
 Wait for the STACK to move into the `CREATE_COMPLETE` state before continuing.
 
 Move to the EC2 console https://console.aws.amazon.com/ec2/v2/home?region=us-east-1  
@@ -41,7 +39,7 @@ Wait for the instance to be in a `RUNNING` state
 # STAGE 1B - Create SSM Parameter Store values for wordpress
 
 Storing configuration information within the SSM Parameter store scales much better than attempting to script them in some way.
-In this sub-section you are going to create parameters to store the important configuration items for the platform you are building.  
+In this sub-section, parameters will be created to store the important configuration items for the platform being built. 
 
 Open a new tab to https://console.aws.amazon.com/systems-manager/home?region=us-east-1  
 Click on `Parameter Store` on the menu on the left
@@ -103,7 +101,7 @@ Click `Create parameter`
 Right click on `Wordpress-Manual` choose `Connect`
 Choose `Session Manager`  
 Click `Connect`  (if connect isn't highlighted then just wait a few minutes and try again).
-*if after 5-10 minutes this still doesn't let you connect, it's possible you didn't add the `A4LVPC-WordpressInstanceProfile` instance role. You need to right click on the instance, security, modify IAM role and then add `A4LVPC-WordpressInstanceProfile`.  Once done, reboot the instance*   
+*If, after 5-10 minutes, a connection still cannot be established, it is possible that the A4LVPC-WordpressInstanceProfile instance role has not been added. The instance role should be added by right-clicking on the instance, navigating to the "security" section, modifying the IAM role, and then adding the A4LVPC-WordpressInstanceProfile. Once this is completed, the instance should be rebooted.*   
 type `sudo bash` and press enter  
 type `cd` and press enter  
 type `clear` and press enter
