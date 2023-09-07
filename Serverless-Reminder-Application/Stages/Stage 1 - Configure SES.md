@@ -10,7 +10,7 @@ Click `Create Identity`
 Check the 'Email Address' checkbox  
 Ideally we'll need a `sending` email address for the application and a `receiving email address` for your test customer. But we can use the same email for both.  
 
-For the application email ... the email the app will send from i'm going to use `sunjeevsomu02+sending@gmail.com`  
+For the application email ... the email the app will send from i'm going to use `sunjeevs02+sending@gmail.com`  
 Enter whatever email you want to use to send in the box (it needs to be a valid address as it will be checked)  
 Click `Create Identity`  
 An email containing a link to click will be received at this address. 
@@ -24,7 +24,7 @@ Record this address somewhere save as the `Application Sending Address`
 If you want to use a different email address for the test customer (recommended), follow the steps below  
 Click `Create Identity`  
 Check the 'Email Address' checkbox 
-For application email ... the email for my test customer is  `sunjeevsomu02+receiving@gmail.com`  
+For application email ... the email for my test customer is  `sunjeevs02+receiving@gmail.com`  
 Enter whatever email you want to use to send in the box (it needs to be a valid address as it will be checked)  
 Click `Create Identity`   
 An email containing a link to click will be received at this address.  
