@@ -1,6 +1,6 @@
 Serverless Reminder Application
 
-# STAGE 2A - CREATE THE Lambda Execution Role for Lambda
+# STAGE 2A - Create the Lambda Execution Role for Lambda
 
 In this stage of the demo, an IAM role needs to be created, which will be used by the email_reminder_lambda to interact with other AWS services. It could be created manually, but it's easier to complete this step using CloudFormation to expedite the process.
  
