@@ -1,6 +1,6 @@
 import boto3, json, os, decimal
 
-SM_ARN = 'YOUR_STATEMACHINE_ARN'
+SM_ARN = 'arn:aws:states:us-east-1:790888630210:stateMachine:MeetingOTron'
 
 sm = boto3.client('stepfunctions')
 
