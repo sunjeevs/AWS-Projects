@@ -18,3 +18,4 @@ This Project consists of 5 stages :
 [Stage 5](https://github.com/sunjeevs/AWS-Projects/blob/main/Serverless-Reminder-Application/Stages/Stage%205%20-%20Serverless%20Application%20Frontend.md) - Implement the static frontend application and test functionality.
   
 
+<img width="645" alt="Screen Shot 2023-09-08 at 12 15 04 AM" src="https://github.com/sunjeevs/AWS-Projects/assets/97915617/1c4283a1-d262-44d9-a478-f6f0ef2b7a38">
