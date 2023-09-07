@@ -1,5 +1,5 @@
 {
-  "Comment": "Pet Cuddle-o-Tron - using Lambda for email.",
+  "Comment": "Meeting-o-Tron - using Lambda for email.",
   "StartAt": "Timer",
   "States": {
     "Timer": {
