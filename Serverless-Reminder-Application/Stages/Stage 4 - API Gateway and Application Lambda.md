@@ -19,7 +19,7 @@ This is the lambda function which will support the API Gateway
 # STAGE 4B - Configure the Lambda Function
 
 Scroll down, and remove all the code from the `lambda_function` text box  
-Open this link in a new tab https://learn-cantrill-labs.s3.amazonaws.com/aws-serverless-pet-cuddle-o-tron/api_lambda.py
+Open the link in a new tab to the python code given in Codes folder. 
 Move back to the Lambda console.  
 Select the existing lambda code and delete it.  
 Paste the code into the lambda fuction.  
