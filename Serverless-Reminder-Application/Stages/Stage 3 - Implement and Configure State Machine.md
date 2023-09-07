@@ -23,15 +23,13 @@ Click `Create State Machine`
 Select `Write your workflow in code` which will allow you to use Amazon States Language  
 Scroll down
 for `type` select `standard`  
-Open this in a new tab https://learn-cantrill-labs.s3.amazonaws.com/aws-serverless-pet-cuddle-o-tron/pet-cuddle-o-tron.json  
-this is the Amazon States Language (ASL) file for the `pet-cuddle-o-tron` state machine  
-Copy the contents into your clipboard   
+Open in a new tab the Amazon States Language (ASL) file for the `meeting-o-tron` state machine  
+Copy the contents into the clipboard   
 Move back to the step functions console   
 Select all of the code snippet and delete it  
 Paste in your clipboard  
 
-Click the `Refresh` icon on the right side area ... next to the visual map of the state machine.  
-Look through the visual overview and the ASL .. and make sure you understand the flow through the state machine.  
+Click the `Refresh` icon on the right side area ... next to the visual map of the state machine.    
 
 The state machine starts ... and then waits for a certain time period based on the `Timer` state. This is controlled by the web front end you will deploy soon. Then the `email` is used Which sends an email reminder
 
