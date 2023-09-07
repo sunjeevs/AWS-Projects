@@ -40,7 +40,7 @@ The state machine will control the flow through the serverless application.. onc
 # STAGE 3C - Configure State Machine
 
 In the state machine ASL (the code on the left) locate the `EmailOnly` definition.  
-Look for `EMAIL_LAMBDA_ARN` which is a placeholder, replace this with the email_reminder_lambda ARN you noted down previously. This is the ARN of the lambda function you created.
+Look for `EMAIL_LAMBDA_ARN` which is a placeholder, replace this with the email_reminder_lambda ARN you noted down previously. This is the ARN of the lambda function we created.
 
 Scroll down to the bottom and click `next` 
 For `State machine name` use `MeetingOTron`  
