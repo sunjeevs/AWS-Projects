@@ -16,7 +16,7 @@ This is what gives lambda the permissions to interact with those services
 # STAGE 2B - Create the email_reminder_lambda function
 
 Next, the lambda function will be created, which will be used by the serverless application to create an email and then send it using `SES`.
-Move to the lambda console https://console.aws.amazon.com/lambda/home?region=us-east-1#/functions  
+Move to the lambda console 
 Click on `Create Function`  
 Select `Author from scratch`  
 For `Function name` enter `email_reminder_lambda`  
