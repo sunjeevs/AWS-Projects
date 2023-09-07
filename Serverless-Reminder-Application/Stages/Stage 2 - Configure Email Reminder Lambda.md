@@ -46,7 +46,7 @@ def lambda_handler(event, context):
     # Publish message directly to email, provided by EmailOnly or EmailPar TASK
     ses.send_email( Source=FROM_EMAIL_ADDRESS,
         Destination={ 'ToAddresses': [ event['Input']['email'] ] }, 
-        Message={ 'Subject': {'Data': 'Whiskers Commands You to attend!'},
+        Message={ 'Subject': {'Data': 'Schedule your Meetings!'},
             'Body': {'Text': {'Data': event['Input']['message']}}
         }
     )
@@ -62,4 +62,4 @@ Note this ARN down somewhere same as the `email_reminder_lambda` ARN
 
 # STAGE 2 - DONE   
 
-At this point we have configured the lambda function which will be used eventually to send emails on behalf of the serverless application.    
+At this point, the lambda function has been configured, which will eventually be used to send emails on behalf of the serverless application.
