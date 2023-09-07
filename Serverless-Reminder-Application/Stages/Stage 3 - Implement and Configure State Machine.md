@@ -1,4 +1,4 @@
-## Serverless Reminder Application
+# Serverless Reminder Application
 
 # STAGE 3A - Create State Machine Role
 
