@@ -1,4 +1,4 @@
-Serverless Reminder Application
+## Serverless Reminder Application
 
 # STAGE 2A - Create the Lambda Execution Role for Lambda
 
