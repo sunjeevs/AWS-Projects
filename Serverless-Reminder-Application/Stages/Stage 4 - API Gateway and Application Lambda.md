@@ -1,4 +1,4 @@
-## Serverless Reminder Application
+# Serverless Reminder Application
 
 In this stage, the front end API for the serverless application will be created. The front end loads from S3, runs in your browser, and communicates with this API. API Gateway will be used for the API Endpoint, and Lambda will be used to provide the backing compute. First, the supporting API_LAMBDA will be created, and then the API Gateway will be set up.
 
