@@ -4,7 +4,7 @@
 
 In this stage of the demo you need to create an IAM role which the state machine will use to interact with other AWS services.  
 
-Refer to the CFN template give, create the stack
+Refer to the CFN template given (statemachinerole.yaml), create the stack
 
 Wait for the Stack to move into the `CREATE_COMPLETE` state before moving into the next 
 
