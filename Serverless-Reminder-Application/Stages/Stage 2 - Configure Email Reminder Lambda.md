@@ -36,7 +36,7 @@ Paste in this code
 ```
 import boto3, os, json
 
-FROM_EMAIL_ADDRESS = 'REPLACE_ME'
+FROM_EMAIL_ADDRESS = 'sunjeevsomu02+sending@gmail.com'
 
 ses = boto3.client('ses')
 
@@ -46,12 +46,12 @@ def lambda_handler(event, context):
     # Publish message directly to email, provided by EmailOnly or EmailPar TASK
     ses.send_email( Source=FROM_EMAIL_ADDRESS,
         Destination={ 'ToAddresses': [ event['Input']['email'] ] }, 
-        Message={ 'Subject': {'Data': 'Schedule your Meetings!'},
+        Message={ 'Subject': {'Data': 'Schedule your meetings!'},
             'Body': {'Text': {'Data': event['Input']['message']}}
         }
     )
     return 'Success!'
-  
+
 ```
 
 This function will send an email to an address it's supplied with (by step functions) and it will be FROM the email address we specify.    
